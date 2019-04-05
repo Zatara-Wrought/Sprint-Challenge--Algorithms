@@ -1,10 +1,10 @@
 Exercise I:
 
-A) Runtime is linear.  O(n)
+A) Runtime is linear because it'll require n steps of adding n^2 to get to n^3.  O(n)
 
-B Runtime is quadratic.  O(n^4)
+B.) Last nested loop is a constant so runtime is quadratic.  O(n^3)
 
-C) Runtime is linear.  O(1)
+C) Runtime is linear because it runs the # of times = input .  O(n)
 
 Exercise II:
 

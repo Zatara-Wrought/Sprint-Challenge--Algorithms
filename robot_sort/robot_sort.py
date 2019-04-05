@@ -97,12 +97,23 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
+        # Grabs first item and sets light on
         self.swap_item()
         self.set_light_on()
         while self.light_is_on():
             while self.move_right():
                 if self.compare_item() == 1:
                     self.swap_item()
+            if self.compare_item() is None:
+                self.swap_item()
+                self.set_light_off()
+                break
+            else:
+                while self.move_left():
+                    if (self.compare_item() is None):
+                        self.swap_item()
+                        self.move_right()
+                        self.swap_item()
                         break
         return self._list
         
